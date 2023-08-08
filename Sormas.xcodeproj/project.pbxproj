@@ -11,6 +11,8 @@
 		3D3E370B2A7FD45700D5001D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E370A2A7FD45700D5001D /* ContentView.swift */; };
 		3D3E370D2A7FD45B00D5001D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3E370C2A7FD45B00D5001D /* Assets.xcassets */; };
 		3D3E37102A7FD45B00D5001D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3E370F2A7FD45B00D5001D /* Preview Assets.xcassets */; };
+		3D3E37182A80510800D5001D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E37172A80510800D5001D /* LoginView.swift */; };
+		3D4A1EA62A80B3E40014B76C /* LoginScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A1EA52A80B3E40014B76C /* LoginScreenModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		3D3E370A2A7FD45700D5001D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3D3E370C2A7FD45B00D5001D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D3E370F2A7FD45B00D5001D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3D3E37172A80510800D5001D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3D4A1EA52A80B3E40014B76C /* LoginScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		3D3E37072A7FD45700D5001D /* Sormas */ = {
 			isa = PBXGroup;
 			children = (
+				3D4A1EA42A80B3B50014B76C /* ViewModel */,
+				3D3E37162A8050DC00D5001D /* View */,
 				3D3E37082A7FD45700D5001D /* SormasApp.swift */,
 				3D3E370A2A7FD45700D5001D /* ContentView.swift */,
 				3D3E370C2A7FD45B00D5001D /* Assets.xcassets */,
@@ -65,6 +71,22 @@
 				3D3E370F2A7FD45B00D5001D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3D3E37162A8050DC00D5001D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D3E37172A80510800D5001D /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D4A1EA42A80B3B50014B76C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3D4A1EA52A80B3E40014B76C /* LoginScreenModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D3E37182A80510800D5001D /* LoginView.swift in Sources */,
 				3D3E370B2A7FD45700D5001D /* ContentView.swift in Sources */,
 				3D3E37092A7FD45700D5001D /* SormasApp.swift in Sources */,
+				3D4A1EA62A80B3E40014B76C /* LoginScreenModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
