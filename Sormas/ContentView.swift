@@ -8,8 +8,41 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("log_Status") var log_Status: Bool = false
+    @State var showLoginPage : Bool = false
+    var data = OnboardingDataModel.data
+
     var body: some View {
-        LoginView()
+        Group{
+            if log_Status {
+                
+                MainView()
+            }else{
+
+                OnboardingViewPure(data: data, doneFunction: {
+                    DispatchQueue.main.async {
+                        
+                        showLoginPage = true
+                    }
+                    /// Update your state here
+                    //self.onboardinDone = true
+                    print("done onboarding")
+                })
+                .overlay(
+                
+                    Group{
+                        
+                        if showLoginPage {
+                            AuthView()
+                                //.edgesIgnoringSafeArea(.all)
+                                .transition(.move(edge: .bottom))
+                        }
+                    }
+                
+                )
+                
+            }
+        }
     }
 }
 
