@@ -18,7 +18,7 @@ import SwiftUI
 
 struct AuthView: View {
     @StateObject var loginData: LoginScreenModel = LoginScreenModel()
-   // let color2 = UIColor(rgb: 0xFFFFFF)
+    
     var body: some View {
         ScrollView(.vertical,showsIndicators: false){
          
@@ -32,7 +32,7 @@ struct AuthView: View {
                             .frame(maxWidth: .infinity, alignment: .center)
                             .padding(.bottom, 20)
                         
-                        Text("Sign In")
+                        Text(!loginData.registerUser ? "Sign In" : "Sign Up")
                             .font(.system(size: 22))
                             .fontWeight(.bold)
                             .frame(maxWidth: .infinity, alignment: .leading)

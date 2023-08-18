@@ -20,21 +20,26 @@ struct AppointmentDetailsView: View {
                     
                     VStack(alignment: .leading, spacing: 10){
                         
-                        HStack(spacing: 3){
+                        HStack(spacing: 6){
                             
                             Text("Dr Upaul")
-                                .font(.title3)
-                                .fontWeight(.medium)
+                                .font(.headline)
+                                .fontWeight(.bold)
                             
-                            Spacer()
+                            //Spacer()
                             
                             Image(systemName: "message")
-                            Spacer()
+                                .font(.body)
+                            //Spacer()
                             
                             Image(systemName: "phone")
-                            Spacer()
+                                .font(.body)
+
+                            //Spacer()
                             
                             Image(systemName: "video")
+                                .font(.body)
+
                             
                             
                         }

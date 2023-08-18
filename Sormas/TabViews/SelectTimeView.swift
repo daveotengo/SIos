@@ -25,6 +25,9 @@ struct SelectTimeView: View {
                 DatePicker("Enter your birthday", selection: $selectedDate)
                     .datePickerStyle(GraphicalDatePickerStyle())
                     .frame(maxHeight: 400)
+                    .frame(maxWidth: .infinity)
+                    .padding(30)
+                
                 
                 
                 //            DatePicker("Date", selection: $selectedDate, displayedComponents: .date)
@@ -42,7 +45,7 @@ struct SelectTimeView: View {
                         .font(.system(size: 15))
                     
                 }
-                .padding(.top,25)
+                //.padding(.top,25)
                 .padding(.horizontal,30)
                 
                 ScrollView(.horizontal, showsIndicators: false){
