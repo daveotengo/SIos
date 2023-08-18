@@ -1,6 +1,6 @@
 # SIos
 
-<img width="564" alt="Screenshot 2023-08-17 at 8 24 03 PM" src="https://github.com/daveotengo/SIos/assets/30934250/b4eeaddc-f395-4e29-b22c-3fbc3d13d709">
+<img height="450" width = 200 alt="Screenshot 2023-08-17 at 8 24 03 PM" src="https://github.com/daveotengo/SIos/assets/30934250/b4eeaddc-f395-4e29-b22c-3fbc3d13d709">
 
 <img height="450" width = 200 alt="Screenshot 2023-08-17 at 8 28 04 PM" src="https://github.com/daveotengo/SIos/assets/30934250/9178aa82-2aa1-49b8-9b59-9f10a36724de">
 <img height="450" width = 200 alt="Screenshot 2023-08-17 at 8 27 51 PM" src="https://github.com/daveotengo/SIos/assets/30934250/d53178f5-ec24-476a-af72-84be6ed9ceae">
