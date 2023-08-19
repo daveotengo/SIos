@@ -17,7 +17,7 @@ struct Home: View {
         NavigationView{
             //ScrollView(.vertical, showsIndicators: false){
                 
-                VStack(spacing: 20){
+                VStack(spacing: 15){
                     
 
                         SemiProfileView()

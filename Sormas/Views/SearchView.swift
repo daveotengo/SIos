@@ -57,7 +57,7 @@ struct SearchView: View {
                 .padding(.trailing, 20)
             }
             .padding([.horizontal])
-            .padding(.top,40)
+            .padding(.top,60)
             .padding(.bottom, 10)
             
         // Showing Progress if Searching
