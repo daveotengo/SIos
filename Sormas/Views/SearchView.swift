@@ -47,14 +47,17 @@ struct SearchView: View {
                 .padding(.vertical, 12)
                 .padding(.horizontal)
                 .background(
-                    Capsule()
-                        .strokeBorder(Color.purple, lineWidth: 1.5)
+                    RoundedRectangle(cornerRadius: 10)
+                              .strokeBorder(Color.gray, lineWidth: 0.8)
+                              .background(Color.gray.opacity(0.1))
+//                    Capsule()
+//                        .strokeBorder(Color.purple, lineWidth: 1.5)
                 )
                 //.matchedGeometryEffect(id: "SEARCHBAR", in: animation)
                 .padding(.trailing, 20)
             }
             .padding([.horizontal])
-            .padding(.top)
+            .padding(.top,40)
             .padding(.bottom, 10)
             
         // Showing Progress if Searching

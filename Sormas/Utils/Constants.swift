@@ -11,5 +11,5 @@ import Foundation
 import Foundation
 
 struct Constants {
-    static let BASE_URL = "YOUR_BASE_URLEED"
+    static let BASE_URL = "YOUR_BASE_URL"
 }

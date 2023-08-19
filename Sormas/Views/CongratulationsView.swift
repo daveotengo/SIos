@@ -43,7 +43,9 @@ struct CongratulationsView: View {
                 
                 Text("Pay Now")
                     .font(Font.custom("Averia Sans Libre", size: 22).weight(.bold))
-                    .frame(width: 376.55, height: 60)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 60)
+                    //.frame(width: 376.55, height: 60)
                     .foregroundColor(.white)
                 
                     .lineSpacing(22)
@@ -59,8 +61,9 @@ struct CongratulationsView: View {
             }
             .padding(.vertical)
             }
-            .padding()
+            //.padding()
         }
+        .padding(.horizontal,30)
     }
 }
 

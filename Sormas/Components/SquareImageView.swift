@@ -18,11 +18,12 @@ struct SquareImageView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 10)) // Rounded corners
                 .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth: 2))
                 .background(
-                    LinearGradient(
-                        gradient: Gradient(colors: [Color.gray.opacity(0.7),Color.gray.opacity(0.2), Color.gray.opacity(0.4)]),
-                        startPoint: .top,
-                        endPoint: .bottom
-                    )
+                    .gray.opacity(0.2)
+//                    LinearGradient(
+//                        gradient: Gradient(colors: [Color.gray.opacity(0.7),Color.gray.opacity(0.2), Color.gray.opacity(0.4)]),
+//                        startPoint: .top,
+//                        endPoint: .bottom
+//                    )
                 )
             
             //                        AngularGradient(

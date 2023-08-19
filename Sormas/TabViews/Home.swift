@@ -119,6 +119,7 @@ struct Home: View {
                             }
                             .padding(.horizontal)
                         }
+                        
                     }
                     
                     

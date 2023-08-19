@@ -12,7 +12,7 @@ struct AppointmentDetailsView: View {
         //NavigationView{
             VStack(alignment: .leading,spacing: 10){
                 
-                HStack(spacing: 7){
+                HStack(spacing:5){
                     
                     SquareImageView()
                     
@@ -20,29 +20,32 @@ struct AppointmentDetailsView: View {
                     
                     VStack(alignment: .leading, spacing: 10){
                         
-                        HStack(spacing: 6){
+                        HStack(spacing: 10){
                             
                             Text("Dr Upaul")
                                 .font(.headline)
                                 .fontWeight(.bold)
+                                .lineLimit(1) // Set line limit to 1
+                                  .fixedSize(horizontal: true, vertical: false)
                             
-                            //Spacer()
+                            Spacer()
                             
                             Image(systemName: "message")
-                                .font(.body)
+                                .font(.caption)
                             //Spacer()
                             
                             Image(systemName: "phone")
-                                .font(.body)
+                                .font(.caption)
 
                             //Spacer()
                             
                             Image(systemName: "video")
-                                .font(.body)
+                                .font(.caption)
 
-                            
+                            //Spacer()
                             
                         }
+                        
                         
                         Text("dentist")
                         
@@ -59,6 +62,8 @@ struct AppointmentDetailsView: View {
                         }
                     }
                 }
+                .padding(.top,40)
+
                 .padding(.horizontal,30)
                 
                 Text("Details")

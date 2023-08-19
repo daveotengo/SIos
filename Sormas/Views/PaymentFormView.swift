@@ -51,7 +51,7 @@ struct PaymentFormView: View {
                         
                         
                         Text("Doctor Chanaling Payment Method")
-                            .font(.title3)
+                            .font(.body)
                             .fontWeight(.bold)
                         //                        .font(Font.custom("Averia Sans Libre", size: 20).weight(.bold))
                             .foregroundColor(.black)
@@ -71,7 +71,9 @@ struct PaymentFormView: View {
                                         ZStack{
                                             Rectangle()
                                                 .foregroundColor(.clear)
-                                                .frame(width: 163, height: 50)
+                                                .frame(maxWidth: .infinity)
+                                                .frame(height: 50)
+//                                                .frame(width: 163, height: 50)
                                                 .background(Color(red: 0.10, green: 0.56, blue: 0.71))
                                                 .cornerRadius(15)
                                                 .overlay(
@@ -90,7 +92,9 @@ struct PaymentFormView: View {
                                             
                                             Rectangle()
                                                 .foregroundColor(.clear)
-                                                .frame(width: 163, height: 50)
+                                                .frame(maxWidth: .infinity)
+                                                .frame(height: 50)
+//                                                .frame(width: 163, height: 50)
                                                 .background(Color(red: 0.85, green: 0.85, blue: 0.85).opacity(0.30))
                                                 .cornerRadius(15)
                                             Text("Cash Payment")
@@ -107,24 +111,12 @@ struct PaymentFormView: View {
                                 
                                 VStack(alignment: .leading, spacing: 15){
                                     
-                                    //                        Text("Card Number")
-                                    //                                .font(Font.custom("Averia Sans Libre", size: 18))
-                                    //                                .foregroundColor(.black)
                                     
                                     
                                     
                                     ZStack{
                                         CustomTextField(icon: "creditcard", title: "Card Number", hint: "Enter your Username", value: $textValue, showPassword: $show)
-                                        //.padding(.bottom, 10)
-                                            .frame(width: 350)
-                                        //                                Text("1234 8896 1145 0896")
-                                        //                                    .font(Font.custom("Averia Sans Libre", size: 16))
-                                        //                                    .foregroundColor(.black)
-                                        //                                Rectangle()
-                                        //                                    .foregroundColor(.clear)
-                                        //                                    .frame(width: 348.42, height: 50)
-                                        //                                    .background(Color(red: 0.85, green: 0.85, blue: 0.85).opacity(0.30))
-                                        //                                    .cornerRadius(15)
+                                     
                                         
                                     }
                                     
@@ -132,138 +124,16 @@ struct PaymentFormView: View {
                                 }
                                 
                                 HStack(spacing: 20) {
-                                    VStack(alignment: .leading) {
-                                        //                                    HStack{
-                                        //                                        Image(systemName: "calendar")
-                                        //                                            .padding(.leading, 8)
-                                        //                                            .foregroundColor(.gray)
-                                        //                                                                        Text("Expiry Date")
-                                        //                                                                            .font(Font.custom("Averia Sans Libre", size: 18))
-                                        //                                                                            .foregroundColor(.black)
-                                        //
-                                        //
-                                        //                                    }
-                                        
-                                        HStack {
-                                            
-                                            ZStack{
-                                                
-                                                
-                                                
-                                                
-                                                //                                            .labelsHidden()
-                                                //                                            .padding(.horizontal, 8)
-                                                
-                                                CustomTextField(icon: "calendar", title: "Expiry Date", hint: "Enter your Username", value: $expiryDateValue, showPassword: $show)
-                                                //.padding(.bottom, 10)
-                                                    .frame(width: 170)
-                                                //                                                .overlay{
-                                                //                                                    DatePicker(
-                                                //                                                        "Start Date",
-                                                //                                                        selection: $date,
-                                                //                                                        in: dateRange,
-                                                //                                                        displayedComponents:
-                                                //                                                            [.date]
-                                                //                                                        //[.date, .hourAndMinute]
-                                                //                                                    )
-                                                //                                                }
-                                                
-                                                //                                               DatePicker(
-                                                //                                                   "",
-                                                //                                                   selection: $date,
-                                                //                                                   in: dateRange,
-                                                //                                                   displayedComponents: [.date, .hourAndMinute]
-                                                //                                               )
-                                                //                                               .datePickerStyle(.graphical)
-                                                //                                               .labelsHidden()
-                                            }
-                                        }
-                                        //                                           .overlay(
-                                        //                                               RoundedRectangle(cornerRadius: 10)
-                                        //                                                   .stroke(Color.gray, lineWidth: 1)
-                                        //                                           )
-                                        //                                           .padding(.horizontal)
-                                        //                                    CustomTextField(icon: "calendar", title: "Expiry Date", hint: "Enter your Username", value: $expiryDateValue, showPassword: $show)
-                                        //                                    //.padding(.bottom, 10)
-                                        //                                        .frame(width: 170)
-                                        
-                                        
-                                        //                                Text("Expiry Date")
-                                        //                                    .font(Font.custom("Averia Sans Libre", size: 18))
-                                        //                                    .foregroundColor(.black)
-                                        //
-                                        //                                ZStack {
-                                        //                                    Rectangle()
-                                        //                                        .foregroundColor(.clear)
-                                        //                                        .frame(width: 169, height: 50)
-                                        //                                        .background(Color(red: 0.85, green: 0.85, blue: 0.85).opacity(0.30))
-                                        //                                        .cornerRadius(15)
-                                        //                                    Text("10/02/2022")
-                                        //                                        .font(Font.custom("Averia Sans Libre", size: 16))
-                                        //                                        .foregroundColor(.black)
-                                        //                                }
-                                    }
+                                    CustomTextField(icon: "calendar", title: "Expiry Date", hint: "Enter your Username", value: $expiryDateValue, showPassword: $show)
                                     
-                                    VStack(alignment: .leading) {
-                                        CustomTextField(icon: "person", title: "CVV", hint: "Enter your CVV", value: $cvvValue, showPassword: $show)
-                                        //.padding(.bottom, 10)
-                                            .frame(width: 170)
-                                        //                                Text("CVV")
-                                        //                                    .font(Font.custom("Averia Sans Libre", size: 18))
-                                        //                                    .foregroundColor(.black)
-                                        //
-                                        //                                ZStack {
-                                        //                                    Rectangle()
-                                        //                                        .foregroundColor(.clear)
-                                        //                                        .frame(width: 160, height: 50)
-                                        //                                        .background(Color(red: 0.85, green: 0.85, blue: 0.85).opacity(0.30))
-                                        //                                        .cornerRadius(15)
-                                        //
-                                        //
-                                        //                                    Text("204")
-                                        //                                        .font(Font.custom("Averia Sans Libre", size: 16))
-                                        //                                        .foregroundColor(.black)
-                                        //                                }
-                                    }
+                                    CustomTextField(icon: "person", title: "CVV", hint: "Enter your CVV", value: $cvvValue, showPassword: $show)
                                 }
-                                .frame(width: 400)
-                                //.padding(.top, 20)
+                              
                                 
-                                
-                                
-                                
-                                Group {
+
                                     
-                                    
-                                    VStack(alignment: .leading){
-                                        
-                                        //                            Text("Name")
-                                        //                                .font(Font.custom("Averia Sans Libre", size: 18))
-                                        //                                .foregroundColor(.black)
-                                        //
-                                        //
-                                        //
-                                        //
-                                        //                            ZStack{
-                                        //                                Text("Ravishka Sathsara")
-                                        //                                    .font(Font.custom("Averia Sans Libre", size: 16))
-                                        //                                    .foregroundColor(.black)
-                                        //
-                                        //                                Rectangle()
-                                        //                                    .foregroundColor(.clear)
-                                        //                                    .frame(width: 348.42, height: 50)
-                                        //                                    .background(Color(red: 0.85, green: 0.85, blue: 0.85).opacity(0.30))
-                                        //                                    .cornerRadius(15)
-                                        //                            }
-                                        //                            DatePicker("Select a date", selection: $selectedDate, displayedComponents: .date)
-                                        //                                          .datePickerStyle(MenuPickerStyle())
-                                        //                                          .padding()
-                                        
-                                        CustomTextField(icon: "person", title: "Name", hint: "Enter your Username", value: $nameValue, showPassword: $show)
-                                            .padding(.bottom, 20)
-                                            .frame(width: 350)
-                                    }
-                                    //.padding()
+                                    CustomTextField(icon: "person", title: "Name", hint: "Enter your Username", value: $nameValue, showPassword: $show)
+                                        //.padding(.bottom, 20)
                                     
                                     
                                     NavigationLink{
@@ -273,7 +143,8 @@ struct PaymentFormView: View {
                                         Text("Pay Now")
                                             .font(Font.custom("Averia Sans Libre", size: 22).weight(.bold))
                                             .foregroundColor(.white)
-                                            .frame(width: 380)
+                                            .frame(maxWidth: .infinity)
+                                            //.frame(width: 380)
                                             .frame(height: 60)
                                             .lineSpacing(22)
                                             .background{
@@ -289,23 +160,22 @@ struct PaymentFormView: View {
                                     .padding(.vertical)
                                     .padding(.bottom,70)
                                     
-                                    //
-//                                    .navigationBarBackButtonHidden(true)
-//                                    .navigationBarItems(leading: CustomBackButton())
-                                    
-                                }
                                 
                                 
                                 
                             }
                             
-                            
+                            //.padding(.horizontal,30)
+
                         }
+
                         
                     }
-                    
+                    .padding(.horizontal,30)
+
                     .frame(height: 600)
-                    .frame(width: 500)
+                    //.frame(maxWidth: .infinity)
+                    //.frame(width: 500)
                     .cornerRadius(20)
                     
                     //                .background(
@@ -324,6 +194,7 @@ struct PaymentFormView: View {
                     //
                     
                 }
+                //.padding(.horizontal,30)
                 
             }
             .navigationBarTitle("Payment")

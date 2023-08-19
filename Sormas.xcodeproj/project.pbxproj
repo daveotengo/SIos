@@ -146,6 +146,7 @@
 		3D069CFD2A88A7C70054E575 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3DFEDEED2A8442D200904B2A /* OnboardingDataModel.swift */,
 				3D069CFE2A88A7E10054E575 /* Product.swift */,
 				3D6A73CD2A89211A00610B27 /* Category.swift */,
 				3D6A73D32A893F7D00610B27 /* Doctor.swift */,
@@ -178,7 +179,6 @@
 				3D069CFD2A88A7C70054E575 /* Model */,
 				3D069CF32A85AEEB0054E575 /* Utils */,
 				3DFEDEF82A8450EE00904B2A /* Service */,
-				3DFEDEEC2A84428200904B2A /* Data */,
 				3DFEDEE92A82F35700904B2A /* Components */,
 				3D4A1EA42A80B3B50014B76C /* ViewModel */,
 				3D3E37162A8050DC00D5001D /* Views */,
@@ -251,14 +251,6 @@
 				3D936F022A8DD4CA00E0D8BE /* ChatInputView.swift */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		3DFEDEEC2A84428200904B2A /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				3DFEDEED2A8442D200904B2A /* OnboardingDataModel.swift */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		3DFEDEF82A8450EE00904B2A /* Service */ = {
